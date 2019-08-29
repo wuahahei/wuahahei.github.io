@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>超详细github+hexo搭建免费的个人博客教程 - PMJ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <meta name="description" content="环境搭建：操作系统：Window1032位Git：2.15.1.232位node：11.10.1 准备工作：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="超详细github+hexo搭建免费的个人博客教程">
+<meta property="og:url" content="http://yoursite.com/2019/08/28/超详细github-hexo搭建免费的个人博客教程/index.html">
+<meta property="og:site_name" content="PMJ">
+<meta property="og:description" content="环境搭建：操作系统：Window1032位Git：2.15.1.232位node：11.10.1 准备工作：">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:updated_time" content="2019-08-29T12:31:24.416Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="超详细github+hexo搭建免费的个人博客教程">
+<meta name="twitter:description" content="环境搭建：操作系统：Window1032位Git：2.15.1.232位node：11.10.1 准备工作：">
+<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/1.jpg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/1.jpg" alt="超详细github+hexo搭建免费的个人博客教程" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">主页</a>
+                
+                <a class="navbar-item" href="/archives">归档</a>
+                
+                <a class="navbar-item" href="/categories">分类</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-28T11:42:11.000Z">2019-08-28</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    12 minutes read (About 1744 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                超详细github+hexo搭建免费的个人博客教程
+            
+        </h1>
+        <div class="content">
+            <h2 id="环境搭建："><a href="#环境搭建：" class="headerlink" title="环境搭建："></a>环境搭建：</h2><p>操作系统：Window10<br>32位Git：<a href="https://pan.baidu.com/s/1fwLcTziU7NhBWGHJhV9CKw" target="_blank" rel="noopener">2.15.1.2</a><br>32位node：<a href="https://pan.baidu.com/s/1TlOLTtr0vgkfRZMtY68EoQ" target="_blank" rel="noopener">11.10.1</a></p>
+<h2 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h2><a id="more"></a>
+<p>了解什么是GitHub<br>了解什么是hexo<br>相关软件git和node的安装</p>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>安装完成后右键单击会多出如下两个选项<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%871.png" alt="图片1"></p>
+<h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><p>安装完成后可以在DOS或Git中使用npm下载hexo<br>检查是否安装：右键单击选择Git Bash Here，输入如下命令（此后命令都使用Git Bash）</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%872.png" alt="图片2"><br>显示版本信息说明安装成功</p>
+<h3 id="下载hexo"><a href="#下载hexo" class="headerlink" title="下载hexo"></a>下载hexo</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%873.png" alt="图片3"></p>
+<h3 id="在GitHub上创建仓库"><a href="#在GitHub上创建仓库" class="headerlink" title="在GitHub上创建仓库"></a>在GitHub上创建仓库</h3><p>官网：<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a><br>注册账号：<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%874.png" alt="图片4"><br>username最好起一个容易记住有特色的名字，待会创建的仓库名于此有关，搭建的博客地址也于此有关<br>登录之后创建一个仓库<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%875.png" alt="图片5"></p>
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%876.png" alt="图片6"><br>这里需要注意创建的仓库名称必须是：username.github.io，其中username是刚刚注册的用户名，例如我的用户名是wuahahei，那么我创建的仓库名就应该是wuahahei.github.io，也就是我的博客地址</p>
+<h2 id="正式开始："><a href="#正式开始：" class="headerlink" title="正式开始："></a>正式开始：</h2><h3 id="初始化hexo："><a href="#初始化hexo：" class="headerlink" title="初始化hexo："></a>初始化hexo：</h3><p>新建一个文件夹作为存放代码的地方，文件夹的路径要记得，名字可以随便取，比如我的文件夹路径D:\blog<br>进入此文件夹下，右键单击打开git bash，输入如下命令进行hexo的初始化</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%877.png" alt="图片7"><br>会在此目录下生成如下目录结构<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%878.png" alt="图片8"></p>
+<h3 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%879.png" alt="图片9"><br>文件夹下新增两个文件，public文件夹生成相关html代码<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8710.png" alt="图片10"></p>
+<h3 id="开启本地预览服务"><a href="#开启本地预览服务" class="headerlink" title="开启本地预览服务"></a>开启本地预览服务</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+<p>发表博客前都可以先在本地预览要发布的内容看看效果，满意之后再上传<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8711.png" alt="图片11"><br>在浏览地中本地访问：<a href="http://localhost:4000，hexo默认有一篇名为Hello" target="_blank" rel="noopener">http://localhost:4000，hexo默认有一篇名为Hello</a> World的文章<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8712.png" alt="图片12"><br>Ctrl+c结束本地预览服务</p>
+<h3 id="上传到GitHub上"><a href="#上传到GitHub上" class="headerlink" title="上传到GitHub上"></a>上传到GitHub上</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>需先配置blog文件夹下的_configyum<br>使用记事本打开_config.yum，配置如下信息<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%87.png" alt="图片"><br>需注意冒号后面要留一个空格，否则会出错；repo那一行的内容是在GitHub上复制过来的，具体位置如下：<br>登录GitHub在主页中依次进入如下划线部分，找到可复制的repository<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8713.png" alt="图片13"></p>
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8714.png" alt="图片14"><br>此外还需要安装一个插件，此过程较缓慢</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git -save</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8715.png" alt="图片15"><br>否则会报如下错误<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8716.png" alt="图片16"><br>再次执行hexo d<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8717.png" alt="图片17"><br>按照提示运行</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email “you@example.com”  //””里面是注册邮箱</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name “Your name”  //””里面是用户名</span><br></pre></td></tr></table></figure>
+
+<h3 id="接下来配置ssh密匙"><a href="#接下来配置ssh密匙" class="headerlink" title="接下来配置ssh密匙"></a>接下来配置ssh密匙</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="hljs-built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure>
+
+<p>如果提示<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8718.png" alt="图片18"><br>说明是第一次使用，执行如下命令</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="hljs-string">"邮件地址"</span></span><br></pre></td></tr></table></figure>
+
+<p>然后连续3次回车，按照提示在相应的文件夹下找到id_rsa.pub文件，记事本打开并复制里面的内容，依次执行如下划线部分</p>
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8719.png" alt="图片19"></p>
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8720.png" alt="图片20"></p>
+<p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8721.png" alt="图片21"><br>将刚复制的内容粘贴到key中，title随便填，保存</p>
+<h3 id="测试是否成功"><a href="#测试是否成功" class="headerlink" title="测试是否成功"></a>测试是否成功</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>如果提示Hi wuahahei! You’ve successfully authenticated, but GitHub does not provide shell access.则配置成功</p>
+<h3 id="再来执行hexo-d"><a href="#再来执行hexo-d" class="headerlink" title="再来执行hexo d"></a>再来执行hexo d</h3><p><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8722.png" alt="图片22"><br>大功告成，现在搭建的博客可以被别人访问了</p>
+<h2 id="使用hexo发表博客"><a href="#使用hexo发表博客" class="headerlink" title="使用hexo发表博客"></a>使用hexo发表博客</h2><h3 id="首先选择一个自己的主题：官网：https-hexo-io-themes"><a href="#首先选择一个自己的主题：官网：https-hexo-io-themes" class="headerlink" title="首先选择一个自己的主题：官网：https://hexo.io/themes"></a>首先选择一个自己的主题：官网：<a href="https://hexo.io/themes" target="_blank" rel="noopener">https://hexo.io/themes</a></h3><p>进入选择的主题中复制源码下载地址<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8723.png" alt="图片23"><br>在博客路径下的themes文件夹下，使用git执行如下命令：<br>git clone 刚刚复制的主题地址<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8724.png" alt="图片24"><br>接下来修改blog文件夹下的配置文件_config.yum<br><img src="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/%E5%9B%BE%E7%89%8725.png" alt="图片25"><br>保存，依次执行如下命令</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s  <span class="hljs-comment">#本地预览效果，Ctrl+c结束预览</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>可以阅读主题源码说明，对主题作进一步的修改以达到自己预期的效果</p>
+<h3 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="hljs-string">"postName"</span>/hexo n <span class="hljs-string">""</span> <span class="hljs-comment">#新建文章</span></span><br><span class="line">hexo new page <span class="hljs-string">"pageName"</span> <span class="hljs-comment">#新建页面</span></span><br><span class="line">hexo generate/hexo g <span class="hljs-comment">#生成静态页面至public目录</span></span><br><span class="line">hexo server/hexo s <span class="hljs-comment">#开启预览访问端口</span></span><br><span class="line">hexo deploy/hexo d <span class="hljs-comment">#部署到GitHub hexo</span></span><br><span class="line">hexo version <span class="hljs-comment">#查看Hexo的版本</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h3><p>在博客根目录打开git，执行hexo n “博客名称”,则会在blog\source_posts下生成相应的.md文件，在此文件中添加博客内容。可以找一个适合自己的写博客的工具<br>依次执行如下命令即可发表博客</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s <span class="hljs-comment">#本地预览一下，满意了上传</span></span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>更多内容敬请期待……</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">Suka dengan artikel ini? Bantu penulis dengan donasi melalui</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/images/z.jpg" alt="Alipay"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="/images/w.jpg" alt="Wechat"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                        <img class="image is-128x128 has-mb-6" src="/images/t.jpg" alt="PMJ">
+                    
+                    
+                    <p class="is-size-4 is-block">
+                        PMJ
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        呜啊哈嘿
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Entrada
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        1
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Categorias
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        0
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Etiquetas
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        0
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://wuahahei.github.io" target="_blank">
+                SEGUIR</a>
+        </div>
+        
+        
+    </div>
+</div>
+    
+        
+    
+        
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Categorias
+            </h3>
+            <ul class="menu-list">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recientes
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="超详细github+hexo搭建免费的个人博客教程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-28T11:42:11.000Z">2019-08-28</time></div>
+                    <a href="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/" class="has-link-black-ter is-size-6">超详细github+hexo搭建免费的个人博客教程</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archivos
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Etiquetas
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recientes
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="超详细github+hexo搭建免费的个人博客教程">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-28T11:42:11.000Z">2019-08-28</time></div>
+                    <a href="/2019/08/28/超详细github-hexo搭建免费的个人博客教程/" class="has-link-black-ter is-size-6">超详细github+hexo搭建免费的个人博客教程</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archivos
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Etiquetas
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <span id="busuanzi_container_site_pv" class="theme-info">
+  |  本站总访问量<span id="busuanzi_value_site_pv">span>次
+ span>
+ <span id="busuanzi_container_site_uv" class="theme-info">
+  |  本站访客数<span id="busuanzi_value_site_uv">span>人次
+ span>
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">script>
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+            </div>
+        </div>
+    </div>
+</footer></script></span></span></span></span></footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    <script src="/js/clipboard.js" defer></script>
+    
+
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Entradas',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categorias',
+                TAGS: 'Etiquetas',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
